@@ -80,13 +80,5 @@ def handleException(Exception err) {
   println(err.getMessage());
   println(err.getStackTrace());
 
-  /* Mail currently not configured
-  mail  body: "project build error is here: ${env.BUILD_URL}" ,
-        from: 'aws-devsecops-workshop@stelligent.com',
-        replyTo: 'no-reply@stelligent.com',
-        subject: 'AWS DevSecOps Workshop Pipeline Build Failed',
-        to: 'robert.murphy@stelligent.com'
-  */
-
   throw err
 }
