@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'bundler/audit/cli'
+require 'bundler/audit/task'
 
 namespace :bundler do
     desc 'Update bundle-audit database'
