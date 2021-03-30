@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'bundler/audit/task'
+# require 'bundler/audit/task'
 
-namespace :bundler do
-    desc 'Update bundle-audit database'
-    task :bundle_test do
-      puts 'Capacity test acceptance environment'
-      Bundler::Audit::Task.new
-    end
-end
+# namespace :bundler do
+#     desc 'Update bundle-audit database'
+#     task :bundle_test do
+#       puts 'Capacity test acceptance environment'
+#       Bundler::Audit::Task.new
+#     end
+# end
