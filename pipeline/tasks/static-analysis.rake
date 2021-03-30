@@ -8,7 +8,7 @@ end
 begin
   require 'rubocop/rake_task'
   RuboCop::RakeTask.new(:rubocop) do |t|
-    t.options = ['--fail-level F']
+    t.options = ['--fail-level error']
   end
 rescue LoadError
   puts "Unable to load rubocop/rake_task, rubocop tests missing\n"
