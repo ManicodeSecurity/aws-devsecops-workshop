@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 require 'bundler/audit/cli'
 
-namespace :commit do
+namespace :bundler do
     desc 'Update bundle-audit database'
-    task :update do
+    task :bundle_test do
+      puts 'Capacity test acceptance environment'
       Bundler::Audit::Task.new
     end
 end
