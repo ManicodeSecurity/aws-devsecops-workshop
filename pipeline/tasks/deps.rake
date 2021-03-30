@@ -1,6 +1,6 @@
 require 'bundler/audit/cli'
 
-namespace :bundle_audit do
+namespace :commit do
     desc 'Update bundle-audit database'
     task :update do
       Bundler::Audit::CLI.new.update
@@ -13,11 +13,11 @@ namespace :bundle_audit do
 
     desc 'Update vulns database and check gems using bundle-audit'
     task :run do
-      Rake::Task['bundle_audit:update'].invoke
-      Rake::Task['bundle_audit:check'].invoke
+      Rake::Task['commit:update'].invoke
+      Rake::Task['commit:check'].invoke
     end
   end
 
   task :bundle_audit do
-    Rake::Task['bundle_audit:run'].invoke
+    Rake::Task['commit:run'].invoke
   end
