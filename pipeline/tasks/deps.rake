@@ -1,6 +1,6 @@
 require 'bundler/audit/cli'
 
-namespace :commit do
+namespace :bundle_audit do
     desc 'Update bundle-audit database'
     task :update do
       Bundler::Audit::CLI.new.update
