@@ -22,6 +22,8 @@ public class CookieController {
         response.addCookie(cookie);
     }
 
+    //test
+
     @RequestMapping(value = "/cookie4", method = "GET")
     public void setEverything(@RequestParam String value, HttpServletResponse response) {
         // ok:cookie-missing-samesite

@@ -2,7 +2,7 @@ import requests
 
 # ok:no-auth-over-http
 good_url = "https://www.github.com"
-bad_url = "http://www.github.com"
+bad_url = "https://www.github.com"
 
 # ruleid:no-auth-over-http
 r = requests.post("http://www.github.com", auth=('user', 'pass'))
